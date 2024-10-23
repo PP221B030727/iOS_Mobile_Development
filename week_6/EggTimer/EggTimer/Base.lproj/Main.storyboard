@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OR6-Js-Ntm">
+                                <rect key="frame" x="0.0" y="79" width="393" height="229"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="SD9-Sy-uJg">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="229"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="142" id="qkS-1L-Zwp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="ZCe-ix-Vmi">
+                                        <rect key="frame" x="142" y="0.0" width="129" height="229"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 2" translatesAutoresizingMaskIntoConstraints="NO" id="Oa5-Wi-Ibu">
+                                        <rect key="frame" x="271" y="0.0" width="122" height="229"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="122" id="Mjp-TS-Cmz"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z0n-pB-gpT">
+                                <rect key="frame" x="0.0" y="398" width="393" height="34.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkB-IG-oLx">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Soft">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="1" green="0.061129800929999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.98781438610000005" green="1" blue="0.91621593050000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="softEggButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgy-v9-k58"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJJ-s0-WrA">
+                                        <rect key="frame" x="134.33333333333334" y="0.0" width="124.33333333333334" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Medium">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="1" green="0.061129800929999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.98781438610000005" green="1" blue="0.91621593050000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="mediumEggButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ui5-6g-kNB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3f-ay-2fK">
+                                        <rect key="frame" x="268.66666666666669" y="0.0" width="124.33333333333331" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Hard">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="1" green="0.061129800929999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" red="0.98781438610000005" green="1" blue="0.91621593050000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="hardEggButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7qb-FW-ndq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vFb-xE-anb">
+                                <rect key="frame" x="10" y="532.33333333333337" width="373" height="4"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vFb-xE-anb" secondAttribute="trailing" constant="10" id="GEr-gn-C2r"/>
+                            <constraint firstItem="OR6-Js-Ntm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KaJ-z3-EWw"/>
+                            <constraint firstItem="OR6-Js-Ntm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="LlM-nx-VT2"/>
+                            <constraint firstItem="z0n-pB-gpT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mql-ca-4W7"/>
+                            <constraint firstItem="vFb-xE-anb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Yfw-GQ-Jmj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OR6-Js-Ntm" secondAttribute="bottom" constant="510" id="cCT-Br-2ep"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z0n-pB-gpT" secondAttribute="trailing" id="dI7-cN-zqT"/>
+                            <constraint firstItem="z0n-pB-gpT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="iaQ-Uw-vp1"/>
+                            <constraint firstItem="z0n-pB-gpT" firstAttribute="top" secondItem="OR6-Js-Ntm" secondAttribute="bottom" constant="90" id="jE8-Mt-EWl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OR6-Js-Ntm" secondAttribute="trailing" id="jfB-RK-1Fg"/>
+                            <constraint firstItem="vFb-xE-anb" firstAttribute="top" secondItem="z0n-pB-gpT" secondAttribute="bottom" constant="100" id="rbS-zS-c2K"/>
+                            <constraint firstItem="OR6-Js-Ntm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="x9o-hp-foO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hardBoiledEggImageView" destination="Oa5-Wi-Ibu" id="5kF-T6-vUs"/>
+                        <outlet property="mediumBoiledEggImageView" destination="ZCe-ix-Vmi" id="hM0-V8-l6K"/>
+                        <outlet property="progressBar" destination="vFb-xE-anb" id="LV6-Ag-HdF"/>
+                        <outlet property="softBoiledEggImageView" destination="SD9-Sy-uJg" id="L8x-yJ-Amp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="192.66667175292969" height="140.66667175292969"/>
+        <image name="Image 1" width="182" height="147.33332824707031"/>
+        <image name="Image 2" width="161.33332824707031" height="138.66667175292969"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
